@@ -1,45 +1,76 @@
 /* Header */
 header {
-  width: 100%;
-  margin-bottom: 20px;
+  width: 25%;
+  margin-bottom: 10px;
 }
 
 header img {
-  width: 100%;
+  width: 25%;
   height: auto;
-  display: block; /* Prevents any unwanted space under the image */
+  display: block; /* Empêche l'espace indésirable sous l'image */
 }
 
+/* Style du corps de la page */
 body {
   font-family: "Arial", sans-serif;
   background-color: #f7f7f7;
-  color: #333;
+  color: #0b0b0b;
   line-height: 1.6;
   padding: 20px;
+  margin: 0; /* Supprime la marge par défaut du body */
 }
 
 /* Style pour la navigation */
 nav {
-  display: flex; /* Utiliser flexbox pour l'alignement */
+  display: flex;
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
-  background-color: #333; /* Couleur de fond de la navigation */
-  padding: 10px 0; /* Espace autour des éléments de navigation */
+  background-color: #332f2f; /* Couleur de fond de la navigation */
+  padding: 10px 0; /* Ajoute de l'espace autour de la navigation */
+
+  ul {
+    display: flex; /* Utilise flexbox pour aligner les éléments horizontalement */
+    margin: 0; /* Supprime la marge par défaut */
+    padding: 0; /* Supprime le padding par défaut */
+    list-style: none; /* Enlève les puces */
+  }
+
+  li {
+    padding: 0 20px; /* Ajoute de l'espace entre les éléments */
+  }
 
   a {
-    color: #f00000; /* Ensures the text stays black on hover */
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* Taille de police pour les liens */
+    padding: 10px 15px; /* Ajoute du padding pour rendre les liens plus cliquables */
+  }
+}
+a:hover {
+  background-color: #555; /* Changer la couleur de fond au survol */
+}
+
+body img {
+  width: 100%; /* Limite la largeur de l'image du footer */
+  height: auto;
+}
+
+section {
+  div p {
+    text-align: center;
+  }
+  p {
+    text-align: right;
   }
 }
 
 /* Footer */
 footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 footer img {
-  width: 80%; /* Limits the width of the footer image */
+  width: 100%; /* Limite la largeur de l'image du footer */
   height: auto;
-  border-radius: 8px;
-  margin-top: 20px; /* Adds a little space above the footer image */
 }
