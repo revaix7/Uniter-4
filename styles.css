@@ -1,0 +1,45 @@
+/* Header */
+header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block; /* Prevents any unwanted space under the image */
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Style pour la navigation */
+nav {
+  display: flex; /* Utiliser flexbox pour l'alignement */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  background-color: #333; /* Couleur de fond de la navigation */
+  padding: 10px 0; /* Espace autour des éléments de navigation */
+
+  a {
+    color: #f00000; /* Ensures the text stays black on hover */
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer img {
+  width: 80%; /* Limits the width of the footer image */
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px; /* Adds a little space above the footer image */
+}
