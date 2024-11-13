@@ -1,0 +1,104 @@
+/* Style général */
+body {
+  font-family: Times, serif;
+  background-image: url("fond.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: Times, serif;
+  font-size: 16px;
+}
+
+.background {
+  background-image: url("image_T2/fond.jpg"); /* Add your image path */
+  background-color: #f0f0f0; /* Optional: Add a fallback color */
+  background-size: cover; /* Optional: Makes sure the image covers the entire div */
+  background-position: center; /* Optional: Centers the image */
+  height: 100vh; /* Optional: Sets the height of the div */
+}
+
+/* Header */
+.header {
+  background-color: rgb(33, 216, 216);
+  padding: 2rem;
+  text-align: center;
+}
+
+#titre {
+  font-size: 40px;
+}
+
+#sous-titre {
+  font-size: 35px;
+  font-style: italic;
+  font-weight: bold;
+  color: aquamarine;
+}
+
+/* Citation */
+.citation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.citation .texte {
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  width: 50%;
+}
+
+#programmeur {
+  max-width: 300px;
+  height: auto;
+  transform: rotate(10deg);
+  transition: transform 0.3s ease;
+}
+
+/* Effet Hover pour la citation */
+.citation:hover .texte {
+  transform: scale(1.05);
+}
+
+/* Section "Génie Informatique" */
+.genie h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.genie p {
+  font-size: 28px;
+  width: 35em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+/* Effet Hover pour le paragraphe */
+.genie p:hover {
+  transform: scale(1.05);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .citation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .citation .texte {
+    width: 80%;
+    text-align: center;
+  }
+
+  #programmeur {
+    max-width: 100%;
+  }
+}
