@@ -1,104 +1,139 @@
-/* Style général */
-body {
-  font-family: Times, serif;
-  background-image: url("fond.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Reset margin, padding, and box-sizing */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  font-family: Times, serif;
-  font-size: 16px;
+/* Body Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0; /* Light background color */
+  color: #333; /* Dark text color for contrast */
+  line-height: 1.6;
 }
 
+/* Background Section */
 .background {
-  background-image: url("image_T2/fond.jpg"); /* Add your image path */
-  background-color: #f0f0f0; /* Optional: Add a fallback color */
-  background-size: cover; /* Optional: Makes sure the image covers the entire div */
-  background-position: center; /* Optional: Centers the image */
-  height: 100vh; /* Optional: Sets the height of the div */
+  background-image: url("image_T2/fond.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
 
-/* Header */
+/* Header Section */
 .header {
-  background-color: rgb(33, 216, 216);
+  background-color: rgba(33, 216, 216, 0.8); /* Semi-transparent */
   padding: 2rem;
-  text-align: center;
+  margin-bottom: 2rem;
 }
 
 #titre {
-  font-size: 40px;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 #sous-titre {
-  font-size: 35px;
+  font-size: 1.5rem;
   font-style: italic;
-  font-weight: bold;
-  color: aquamarine;
+  color: #fff;
 }
 
-/* Citation */
+/* Citation Section */
 .citation {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
   padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.citation:hover {
+  transform: translateY(-5px); /* Move up slightly on hover */
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background */
 }
 
 .citation .texte {
-  font-size: 20px;
-  text-align: justify;
-  line-height: 1.5;
-  width: 50%;
-}
-
-#programmeur {
-  max-width: 300px;
-  height: auto;
-  transform: rotate(10deg);
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
   transition: transform 0.3s ease;
 }
 
-/* Effet Hover pour la citation */
-.citation:hover .texte {
-  transform: scale(1.05);
+.citation .texte:hover {
+  transform: scale(1.05); /* Text slightly enlarges on hover */
 }
 
-/* Section "Génie Informatique" */
+#programmeur {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#programmeur:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adding a shadow effect */
+}
+
+/* Genie Section */
+.genie {
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
 .genie h2 {
-  font-size: 28px;
-  color: #333;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.genie h2:hover {
+  color: #21d8d8; /* Change heading color on hover */
 }
 
 .genie p {
-  font-size: 28px;
-  width: 35em;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-align: justify;
-  line-height: 1.2;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: white;
+  transition: transform 0.3s ease;
 }
 
-/* Effet Hover pour le paragraphe */
 .genie p:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
-/* Responsiveness */
+/* Responsive Design */
 @media (max-width: 768px) {
   .citation {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .citation .texte {
-    width: 80%;
-    text-align: center;
+    width: 90%;
   }
 
   #programmeur {
-    max-width: 100%;
+    max-width: 200px;
+  }
+
+  .genie h2 {
+    font-size: 1.5rem;
+  }
+
+  .genie p {
+    font-size: 0.9rem;
   }
 }
