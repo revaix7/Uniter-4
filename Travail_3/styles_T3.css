@@ -1,39 +1,112 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.logo-titre {
+  display: flex;
+  align-items: left;
+  padding: 10px 20px;
+}
+
+.logo-titre figure {
+  margin: 0;
+}
+
+#logo {
+  width: 200px; /* Adjust to the desired size */
+  height: auto; /* Maintain aspect ratio */
+  padding-right: 20px;
+}
+
 .Menu {
-  list-style-type: none;
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  position: fixed; /* Fixes the menu in place */
-  top: 0; /* Aligns the menu to the top */
-  right: 0; /* Aligns the menu to the right */
-  z-index: 1000; /* Ensures the menu is above other content */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Optional: adds a background for visibility */
-  border-radius: 5px; /* Optional: rounded corners */
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
 }
 
 .Menu ul {
-  display: flex; /* Align the items horizontally */
-  margin: 0; /* Removes the default margin of ul */
-  padding: 0; /* Removes the default padding of ul */
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .Menu li {
-  padding: 0 20px; /* Adds spacing between items */
+  padding: 0 20px;
 }
 
 .Menu a {
   text-decoration: none;
   color: white;
-  font-size: 16px; /* Adjust font size */
-  padding: 10px 15px; /* Adds padding to make the links clickable */
-  display: block; /* Makes the links take up the whole area of the <li> */
+  font-size: 16px;
+  padding: 10px 15px;
+  display: block;
 }
 
-/* Optional: Hover effect for the menu items */
 .Menu a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Horizontal Line */
+.red-line {
+  border: 2px solid red;
+  margin: 20px 0;
+}
+
+/* Toronto Section */
+.toronto figure {
+  size: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.toronto .city-image {
+  transition: transform 0.3s ease;
+}
+
+.toronto .city-image:hover {
+  transform: scale(1.1);
+}
+
+/* Article Section */
+.article-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.T1 {
+  text-indent: 20px;
+  line-height: 1.6;
+}
+
+/* Aside */
+.social-icons img {
+  width: 30px;
+  margin: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.friends-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.friends-list li::marker {
+  color: red;
 }
