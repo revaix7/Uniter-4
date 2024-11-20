@@ -20,15 +20,14 @@ body {
   height: auto; /* Maintain aspect ratio */
   padding-right: 20px;
 }
-
 .Menu {
   margin: 0;
   padding: 0;
-  position: fixed;
-  top: 0;
-  right: 0;
+  position: absolute; /* Absolute positioning relative to the first positioned ancestor */
+  top: 10px; /* Place it at the top of the page */
+  right: 10px; /* Place it on the right side of the page */
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
 }
 
@@ -37,6 +36,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  justify-content: center; /* Optional: center the menu items */
 }
 
 .Menu li {
@@ -45,14 +45,15 @@ body {
 
 .Menu a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 16px;
   padding: 10px 15px;
   display: block;
 }
 
 .Menu a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(76, 68, 68, 0.2);
+  border-radius: 5px;
 }
 
 /* Horizontal Line */
@@ -62,18 +63,33 @@ body {
 }
 
 /* Toronto Section */
-.toronto figure {
-  size: 100%;
+#toronto {
   position: relative;
   text-align: center;
+  border-radius: 5px;
 }
-
-.toronto .city-image {
+#toronto:hover {
   transition: transform 0.3s ease;
+  transform: scale(1.05);
 }
 
-.toronto .city-image:hover {
-  transform: scale(1.1);
+#toronto img {
+  width: 100%;
+  height: auto;
+}
+
+#toronto figcaption {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 97%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 12px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 5px;
 }
 
 /* Article Section */
