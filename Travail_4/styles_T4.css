@@ -1,58 +1,63 @@
-/* General Styles */
+/* Styles généraux */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Assure que le padding et les marges ne modifient pas la taille des éléments */
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #f4f4f4; /* Couleur de fond claire */
+  color: #333; /* Couleur du texte */
 }
 
-/* Header Styles */
+/* Styles pour l'en-tête */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  background-color: #94c194;
+  background-color: #94c194; /* Couleur de fond de l'en-tête */
 }
+
 .left {
-  justify-content: space-evenly;
-  align-items: center;
   display: flex;
-  padding: 0px;
-  img {
-    height: 5%;
-    width: 5%;
-    border-radius: 10px;
-  }
-  .search-bar {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px 20px;
-    width: 320px;
-  }
-
-  .search-bar input {
-    border: none;
-    padding: 5px;
-    width: 100%;
-  }
+  align-items: center;
 }
 
+.left img {
+  height: 40px; /* Taille de l'image */
+  width: auto;
+  border-radius: 10px; /* Coins arrondis */
+  margin-right: 20px; /* Espacement à droite de l'image */
+}
+
+/* Styles pour la barre de recherche */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 20px;
+  width: 320px; /* Largeur de la barre de recherche */
+}
+
+.search-bar input {
+  border: none;
+  padding: 5px;
+  width: 100%;
+  border-radius: 15px; /* Coins arrondis de l'input */
+  font-size: 1em; /* Taille de la police */
+}
+
+/* Styles pour les icônes de l'en-tête */
 .header-icons span {
   padding: 10px;
   font-size: 26px;
   margin: 0 15px;
   cursor: pointer;
   color: white;
-  transition: transform 0.3s ease;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
   border-radius: 10px;
 }
 
@@ -62,7 +67,7 @@ header {
 }
 
 .profile img {
-  border-radius: 50%;
+  border-radius: 50%; /* Image de profil circulaire */
   width: 40px;
   height: 40px;
   margin-right: 15px;
@@ -72,25 +77,26 @@ header {
   color: white;
   font-weight: 600;
   font-size: 18px;
-  transition: transform 0.3s ease;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
   border-radius: 10px;
   padding: 10px;
 }
 
+/* Effet au survol des icônes et du nom du profil */
 .header-icons span:hover {
-  transform: scale(1.1); /* Effet de zoom léger sur l'ensemble de l'élément */
+  transform: scale(1.1); /* Agrandissement au survol */
   background-color: rgba(128, 128, 128, 0.432);
   border-radius: 10px;
 }
+
 .profile h4:hover {
-  transform: scale(1.1); /* Effet de zoom léger sur l'ensemble de l'élément */
+  transform: scale(1.1); /* Agrandissement au survol */
   background-color: rgba(128, 128, 128, 0.432);
   border-radius: 10px;
   padding: 10px;
 }
 
-/* Sidebar Styles */
+/* Styles pour la barre latérale */
 .sidebar {
   position: absolute;
   top: 0;
@@ -115,7 +121,7 @@ header {
 }
 
 .sidebar ul li:hover {
-  background-color: #444;
+  background-color: #444; /* Couleur de fond au survol */
 }
 
 .sidebar ul li span {
@@ -123,13 +129,13 @@ header {
   font-size: 24px;
 }
 
-/* Content Styles */
+/* Styles pour le contenu principal */
 main {
-  margin-left: 220px;
+  margin-left: 220px; /* Décalage pour la barre latérale */
   padding: 20px;
 }
 
-/* Conteneur flex */
+/* Conteneur flex pour les catégories */
 .categories {
   display: flex;
   justify-content: flex-start;
@@ -138,7 +144,7 @@ main {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* Élément de la catégorie */
+
 .category-item {
   text-align: center;
   flex: 1;
@@ -148,19 +154,17 @@ main {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.3s ease; /* Transition douce pour l'effet de zoom sur l'élément */
+  transition: transform 0.3s ease;
 }
 
-/* Image */
 .category-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
-  transition: transform 0.3s ease; /* Transition douce pour l'effet de zoom sur l'image */
+  transition: transform 0.3s ease;
 }
 
-/* Légende */
 .category-item figcaption {
   position: absolute;
   bottom: 0;
@@ -174,13 +178,11 @@ main {
   text-align: left;
 }
 
-/* Effet au survol de l'élément .category-item */
+/* Effet au survol des éléments de catégorie */
 .category-item:hover {
-  transform: scale(1.1); /* Effet de zoom léger sur l'ensemble de l'élément */
-  border-radius: 10px;
+  transform: scale(1.1); /* Zoom lors du survol */
 }
 
-/* Welcome Text */
 .welcome-text {
   text-align: center;
   padding: 20px;
@@ -191,7 +193,7 @@ main {
   margin-bottom: 40px;
 }
 
-/* Store Image Section */
+/* Styles pour l'image du magasin */
 .store-image img {
   width: 100%;
   height: 400px;
@@ -200,11 +202,34 @@ main {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Animation pour faire bobiner l'image du magasin */
+.store-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: bobbing 2s infinite ease-in-out; /* Animation de rebond */
+}
+
+@keyframes bobbing {
+  0% {
+    transform: translateY(0); /* Position de départ */
+  }
+  50% {
+    transform: translateY(-15px); /* Monter de 15px */
+  }
+  100% {
+    transform: translateY(0); /* Retourner à la position initiale */
+  }
+}
+
+/* Section du magasin */
 .store-image {
   margin-top: 40px;
 }
 
-/* Footer (optional) */
+/* Footer (optionnel) */
 footer {
   text-align: center;
   padding: 20px;

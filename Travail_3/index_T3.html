@@ -9,17 +9,17 @@
 
   <body>
     <header>
-      <!-- Logo and Title -->
-      <div class="logo-titre">
-        <figure>
-          <img src="image_T3/drapeau.jpg" alt="Logo Ontario" id="logo" />
-          <figcaption>Carnet de voyage</figcaption>
-        </figure>
-        <h1>Ontario</h1>
-      </div>
+      <!-- Logo avec image et titre de la page -->
+      <figure class="logo">
+        <div class="header_logo">
+          <img src="image_T3/drapeau.jpg" alt="Drapeau de l'Ontario" />
+          <h1>Ontario</h1>
+        </div>
+        <figcaption>Carnet de Voyage</figcaption>
+      </figure>
 
-      <!-- Navigation Menu -->
-      <nav class="Menu">
+      <!-- Menu de navigation avec liens vers différentes sections -->
+      <nav>
         <ul>
           <li><a href="#">Accueil</a></li>
           <li><a href="#">Blog</a></li>
@@ -29,26 +29,26 @@
       </nav>
     </header>
 
-    <!-- Horizontal Line -->
-    <hr class="red-line" />
+    <!-- Séparateur horizontal -->
+    <hr />
 
-    <!-- Toronto Section -->
+    <!-- Section contenant une image et sa légende -->
+    <div class="figure">
+      <figure class="toronto">
+        <img src="image_T3/toronto-grand.jpg" alt="Vue de Toronto" />
+        <figcaption>Retour à mes vacances à Toronto</figcaption>
+      </figure>
+    </div>
 
-    <figure id="toronto">
-      <img src="image_T3/toronto-grand.jpg" alt="Image de Toronto" />
-      <figcaption>Toronto - Capitale provinciale de l'Ontario</figcaption>
-    </figure>
-
-    <!-- Article Section -->
-    <section class="article-section">
+    <section>
+      <!-- Article principal avec titre et texte -->
       <article>
-        <div class="image-title">
-          <figure>
-            <img src="image_T3/toronto-grand.jpg" alt="Image Ontario" />
-          </figure>
-          <h2>À la découverte de l'Ontario</h2>
+        <div id="titre">
+          <img src="image_T3/toronto-grand.jpg" alt="Vue de Toronto" />
+          <h1>À la découverte de l'Ontario</h1>
         </div>
-        <p class="T1">
+
+        <p class="t1">
           L'Ontario est entouré par les provinces du Québec à l'est, du Manitoba
           à l'ouest, des Etats-Unis au sud, c'est à la fois le centre
           géographique, économique et politique du Canada. La province possède
@@ -62,8 +62,9 @@
           abrite deux villes importantes : Toronto, capitale provinciale, et
           Ottawa, capitale fédérale.
         </p>
-        <h3>Ottawa</h3>
-        <p class="T1">
+
+        <h2>Ottawa</h2>
+        <p class="t1">
           4e ville la plus importante du Canada, la capitale fédérale compte
           plus d'1,1 million d'habitants. Avec un des taux de criminalité les
           plus bas du pays, près de 880 parcs, un niveau et une qualité de vie
@@ -72,39 +73,54 @@
         </p>
       </article>
 
-      <!-- Aside Section -->
-      <aside>
-        <h1>À propos de l'auteur</h1>
-        <img src="image_T3/trump.jpg" alt="Image de l'auteur" />
+      <!-- Encadré contenant des informations sur l'auteur -->
+      <aside class="auteur">
+        <h1>A propos de l'auteur</h1>
+        <img
+          class="trump"
+          src="image_T3/trump.jpg"
+          alt="Portrait de Donald Trump"
+        />
         <p>
-          sdfghjkl;';lkjgfdswdfghjkjhgfds'
-          <span>Donald Trump</span>
+          Laisse-moi le temps de me présenter &nbsp;: je m'appelle
+          <span>Donald Trump</span>, je suis né aux USA, mon but est de posséder
+          le Canada, à commencer par l'Ontario. Est-ce vous pensez que je suis
+          stupide? Personne ne me prend au sérieux. C'est pourquoi, aujourd'hui,
+          j'ai décidé de produire cette page afin que vous sachiez de quoi je
+          suis capable
         </p>
-        <div class="social-icons">
-          <img src="image_T3/instagram.jpg" alt="Instagram" />
-          <img src="image_T3/facebook.png" alt="Facebook" />
-          <img src="image_T3/twiter.png" alt="Twitter" />
-          <img src="image_T3/linkedin.png" alt="LinkedIn" />
+
+        <!-- Icônes de réseaux sociaux -->
+        <div class="Application">
+          <img src="image_T3/facebook.png" alt="Icône Facebook" />
+          <img src="image_T3/twiter.png" alt="Icône Twitter" />
+          <img src="image_T3/linkedin.png" alt="Icône LinkedIn" />
+          <img src="image_T3/instagram.jpg" alt="Icône Instagram" />
         </div>
       </aside>
     </section>
 
-    <!-- Footer -->
+    <!-- Pied de page contenant le dernier tweet et la liste des amis -->
     <footer>
-      <div class="last-tweet">
-        <h1>Dernier Tweet</h1>
-        <p>Voici mon dernier tweet...</p>
+      <div class="tweet">
+        <h1>Mon dernier tweet</h1>
+        <p>Voilà! Je viens de finir ce site le 12 novembre à 21h00</p>
       </div>
-      <div class="friends">
-        <h1>Mes Amis</h1>
-        <div class="friends-list">
+
+      <div class="amis">
+        <h1>Mes amis</h1>
+        <div id="list">
           <ul>
-            <li>Amis 1</li>
-            <li>Amis 2</li>
+            <li>Mme Berard</li>
+            <li>Mr Miloudi</li>
+            <li>Mme Marquis</li>
+            <li>Mme Alphonse</li>
           </ul>
           <ul>
-            <li>Amis 3</li>
-            <li>Amis 4</li>
+            <li>Mr Sahouli</li>
+            <li>Mme Mahh</li>
+            <li>Mr Raachi</li>
+            <li>Mme Lemay</li>
           </ul>
         </div>
       </div>

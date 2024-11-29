@@ -1,76 +1,76 @@
-/* Header */
+/* En-tête */
 header {
   width: 25%;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Espace sous l'en-tête */
 }
 
 header img {
   width: 25%;
   height: auto;
-  display: block; /* Empêche l'espace indésirable sous l'image */
+  display: block; /* Supprime l'espace supplémentaire sous l'image */
 }
 
-/* Style du corps de la page */
+/* Corps de la page */
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f7f7f7;
-  color: #0b0b0b;
+  background-color: #f7f7f7; /* Couleur de fond claire */
+  color: #0b0b0b; /* Couleur du texte */
   line-height: 1.6;
   padding: 20px;
   margin: 0; /* Supprime la marge par défaut du body */
 }
 
-/* Style pour la navigation */
+/* Navigation */
 nav {
   display: flex;
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
-  background-color: #332f2f; /* Couleur de fond de la navigation */
+  background-color: #332f2f; /* Couleur de fond sombre pour la navigation */
   padding: 10px 0; /* Ajoute de l'espace autour de la navigation */
-
-  ul {
-    display: flex; /* Utilise flexbox pour aligner les éléments horizontalement */
-    margin: 0; /* Supprime la marge par défaut */
-    padding: 0; /* Supprime le padding par défaut */
-    list-style: none; /* Enlève les puces */
-  }
-
-  li {
-    padding: 0 20px; /* Ajoute de l'espace entre les éléments */
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px; /* Taille de police pour les liens */
-    padding: 10px 15px; /* Ajoute du padding pour rendre les liens plus cliquables */
-  }
 }
+
+nav ul {
+  display: flex; /* Aligne les éléments horizontalement */
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Enlève les puces de la liste */
+}
+
+nav li {
+  padding: 0 20px; /* Ajoute de l'espace entre les éléments */
+}
+
+nav a {
+  text-decoration: none;
+  color: white; /* Texte en blanc pour les liens */
+  font-size: 16px; /* Taille de la police des liens */
+  padding: 10px 15px; /* Ajoute du padding pour rendre les liens plus cliquables */
+}
+
 a:hover {
-  background-color: #555; /* Changer la couleur de fond au survol */
+  background-color: #555; /* Changement de la couleur de fond au survol */
 }
 
 body img {
-  width: 100%; /* Limite la largeur de l'image du footer */
+  width: 100%;
   height: auto;
 }
 
-section {
-  div p {
-    text-align: center;
-  }
-  p {
-    text-align: right;
-  }
+section div p {
+  text-align: center; /* Centre le texte dans le div */
 }
 
-/* Footer */
+section p {
+  text-align: right; /* Aligne le texte du paragraphe à droite */
+}
+
+/* Pied de page */
 footer {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 0; /* Supprime la marge en haut du pied de page */
 }
 
 footer img {
-  width: 100%; /* Limite la largeur de l'image du footer */
+  width: 100%;
   height: auto;
 }

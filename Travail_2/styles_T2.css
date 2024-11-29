@@ -7,18 +7,18 @@
 
 /* Styles du body */
 body {
-  font-family: "Times", serif; /* Police principale */
-  background: url("image_T2/fond.jpg") no-repeat center/cover; /* Image de fond */
-  color: #333; /* Texte sombre pour contraste */
-  line-height: 1.6; /* Hauteur de ligne */
-  min-height: 100vh; /* Hauteur minimale pour couvrir l'écran */
+  font-family: "Times", serif;
+  background: url("image_T2/fond.jpg") no-repeat center/cover;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
 }
 
 /* Section Header */
 header {
-  background-color: rgb(33, 216, 216); /* Fond coloré */
+  background-color: rgb(33, 216, 216);
   width: 80%;
-  margin: 2rem auto; /* Centre l'en-tête */
+  margin: 2rem auto;
   border-radius: 10px;
 }
 
@@ -45,9 +45,9 @@ header {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  background-color: rgba(0, 0, 0, 0.5);
   width: 75%;
-  margin: 2rem auto; /* Centre la citation */
+  margin: 2rem auto;
   border-radius: 8px;
   transition: transform 0.3s, background-color 0.3s;
 }
@@ -61,7 +61,7 @@ header {
 }
 
 .citation .texte:hover {
-  transform: scale(1.05); /* Zoom sur le texte */
+  transform: scale(1.05); /* Effet de zoom sur le texte */
 }
 
 #programmeur {
@@ -105,5 +105,18 @@ header {
 }
 
 .genie h2:hover {
-  color: #21d8d8; /* Change la couleur du titre au survol */
+  color: #21d8d8; /* Changer la couleur du titre au survol */
+}
+
+/* Section de bas de page (footer) */
+footer {
+  text-align: center;
+  margin-top: 2rem; /* Ajoute un peu d'espace au-dessus du footer */
+}
+
+footer img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* Ajout d'un léger arrondi sur l'image du footer */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre portée pour l'image du footer */
 }
